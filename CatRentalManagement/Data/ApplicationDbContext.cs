@@ -14,8 +14,9 @@ namespace CatRentalManagement.Data
         public DbSet<CatRentalManagement.Domain.Make> Make { get; set; } = default!;
 
         protected override void OnModelCreating(ModelBuilder builder)
-        {
+        { 
             base.OnModelCreating(builder);
+            // Every new Configurations/Entities/xxxSeed.cs file will require an 'ApplyConfiguration()'
             builder.ApplyConfiguration(new ColourSeed());
             builder.ApplyConfiguration(new MakeSeed());
             builder.ApplyConfiguration(new ModelSeed());
