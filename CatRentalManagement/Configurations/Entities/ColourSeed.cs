@@ -26,6 +26,15 @@ namespace CatRentalManagement.Configurations.Entities
                     DateUpdated = new DateTime(2026, 1, 1, 0, 0, 0, DateTimeKind.Utc),
                     CreatedBy = "System",
                     UpdatedBy = "System"
+                },
+                new Colour
+                {
+                    Id = 3,
+                    Name = "Red",
+                    DateCreated = new DateTime(2026, 1, 1, 0, 0, 0, DateTimeKind.Utc),
+                    DateUpdated = new DateTime(2026, 1, 1, 0, 0, 0, DateTimeKind.Utc),
+                    CreatedBy = "System",
+                    UpdatedBy = "System"
                 }
             );
 
